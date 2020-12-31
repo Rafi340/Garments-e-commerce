@@ -13,7 +13,7 @@
 <body>
 
   <div style="display:inline-block;">
-    <?php include 'header.php' ?>
+    <?php include '../File3/header.php' ?>
   </div>
 	<header>
 		<div class="logo">
@@ -30,14 +30,15 @@
 					<a href="#">About</a>
 				</li>
 				<li class="Signin">
-					<a href="AdminSignin.php">Sign In</a>
+					<a href="../File2/AdminSignin.php">Sign In</a>
+				</li>
 				
 			</ul>
 			</nav>
 		
 	</header>
   <div>
-    <?php include 'footer.php' ?>
+    <?php include '../File3/footer.php' ?>
   </div>
 	
 </body>
