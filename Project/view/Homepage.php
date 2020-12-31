@@ -5,7 +5,7 @@
 	<title>garments ecommerce</title>
 	<style>
 		body{
-			background-color: #F0F2F5;
+			background-color: lightblue;
 		}
 	</style>
 	<link rel="stylesheet" type="text/css" href="style.css">
@@ -13,7 +13,7 @@
 <body>
 
   <div style="display:inline-block;">
-    <?php include '../File3/header.php' ?>
+    <?php include 'header.html' ?>
   </div>
 	<header>
 		<div class="logo">
@@ -38,7 +38,7 @@
 		
 	</header>
   <div>
-    <?php include '../File3/footer.php' ?>
+    <?php include 'footer.php' ?>
   </div>
 	
 </body>
