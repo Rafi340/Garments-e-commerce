@@ -29,8 +29,8 @@
 				<li class="tive">
 					<a href="#">About</a>
 				</li>
-				<li class="Signin">
-					<a href="../File2/AdminSignin.php">Sign In</a>
+				<li class="Admin Login">
+					<a href="../controller/a_login.php">Admin Login</a>
 				</li>
 				
 			</ul>
