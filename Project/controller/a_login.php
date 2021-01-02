@@ -62,6 +62,18 @@ if(isset($_POST['form_login']))
 
 <br>
 <!DOCTYPE html>
+
+<?php 
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+	
+	$cookieValue= $_POST["username"];
+	setcookie('Admin',$cookieValue,time()+86400);
+		
+}
+ ?>
+ 
+ 
 <html>
 <head>
 	<title>Log in Form</title>
@@ -105,6 +117,7 @@ if(isset($error_message))
 	 //echo  $_SESSION['username'];
 	 ?>
 	 
+	<a href="Homepage.php"> Back </a>
 	
 	<div>
     <?php include '../view/footer.html' ?>

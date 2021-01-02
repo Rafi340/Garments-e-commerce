@@ -1,6 +1,7 @@
 <?php 
     session_start();
  ?>
+  <?php include '../view/header.html' ?>
 
 <html>
 	
@@ -12,8 +13,22 @@
 	 <h1>Profile page</h1>
 	 
 	<div style="display:inline-block;">
-    <?php include '../view/header.html' ?>
+   
     </div>
+	
+	
+	<?php
+	if(isset($_COOKIE['Admin'])){
+			
+			echo "Cookie set";
+			
+		}
+		else
+		{
+			echo "Cookie not set";
+		}
+	?>
+	
 	
 	 
 	 <?php 

@@ -51,21 +51,17 @@
         
 	?>
 	
-	<form action="SellerHome.php" method="post">
-     Email <br>
-    <input type="text" name="email" required >
-	
-	<br><br>
-    <span><?php echo $emailError; ?></span><br />
+	<form method="POST" action=""<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+    User Name:<input type="text='0'" name="name" Required>
+    <span><?php echo $nameError; ?></span><br />
+    <br><br>
+    Password:<input type="var" name="password" Required>
+    <?php echo $passError; ?><br>
+    <br><br>
+    <input type="submit" value="Login">
     
-    Password  <br>
-    <input type="text" name="password" required style=" width:333px">
-	<br>       
-	
-	<br><br>
-	<input type="submit"  value="Log In" >
-	</form>
-	
+ 
+</form>
 	
 	
 	
