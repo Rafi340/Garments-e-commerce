@@ -55,10 +55,10 @@ fclose($myfile);
     <br><br>
     <input type="submit" value="Login">
     
-    <?php
+   <?php
 
     
-if(isset($_POST['submit']))
+/*if(isset($_POST['submit']))
 {
     $username=$_POST['name'];
     if(strlen($username)<=8)
@@ -66,7 +66,7 @@ if(isset($_POST['submit']))
         echo "Name should be more than 8 char";
 
     }
-}
+}*/
 ?>
 
 </form>
