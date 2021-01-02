@@ -117,7 +117,7 @@ if(isset($error_message))
 	 //echo  $_SESSION['username'];
 	 ?>
 	 
-	 <a href="C:\xampp\htdocs\Garments-e-commerce\Project\view\Homepage.php"> Back </a>
+	<a href="Homepage.php"> Back </a>
 	
 	<div>
     <?php include '../view/footer.html' ?>
