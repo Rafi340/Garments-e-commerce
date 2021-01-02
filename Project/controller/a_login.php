@@ -62,6 +62,18 @@ if(isset($_POST['form_login']))
 
 <br>
 <!DOCTYPE html>
+
+<?php 
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+	
+	$cookieValue= $_POST["username"];
+	setcookie('Admin',$cookieValue,time()+86400);
+		
+}
+ ?>
+ 
+ 
 <html>
 <head>
 	<title>Log in Form</title>
