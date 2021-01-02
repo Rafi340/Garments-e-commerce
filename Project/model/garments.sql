@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 01, 2021 at 12:17 PM
+-- Generation Time: Jan 02, 2021 at 11:36 AM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.2.34
 
@@ -48,7 +48,9 @@ INSERT INTO `a_login` (`id`, `username`, `password`) VALUES
 
 CREATE TABLE `b_login` (
   `id` int(11) NOT NULL,
+  `Name` varchar(255) NOT NULL,
   `username` varchar(100) NOT NULL,
+  `Email` varchar(255) NOT NULL,
   `password` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -56,8 +58,12 @@ CREATE TABLE `b_login` (
 -- Dumping data for table `b_login`
 --
 
-INSERT INTO `b_login` (`id`, `username`, `password`) VALUES
-(1, 'rr', 'rr');
+INSERT INTO `b_login` (`id`, `Name`, `username`, `Email`, `password`) VALUES
+(1, 'rrr', 'rr', 'rrr', 'rr'),
+(2, 'r', 'r', 'r', 'r'),
+(3, 'q', 'q', 'q', 'q'),
+(4, 'ii', 'io', 'io', 'io'),
+(5, 'op', 'op', 'op', 'op');
 
 --
 -- Indexes for dumped tables
@@ -89,7 +95,7 @@ ALTER TABLE `a_login`
 -- AUTO_INCREMENT for table `b_login`
 --
 ALTER TABLE `b_login`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
