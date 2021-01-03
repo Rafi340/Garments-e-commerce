@@ -1,0 +1,70 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-image: url(login.jpg);
+    background-size: cover;
+}
+.header1{
+    width: 580px;
+    font-size: large;
+    position: absolute;
+    top: 30%;
+    left:55%;
+    transform: translate(-5%,-70%);
+    color: aliceblue;
+
+}
+.LoginForm h1{
+    top: 30%;
+    left:70%;
+    font-size: 40px;
+    border-bottom: 4px solid;
+    margin-bottom: 30px;
+}
+.LoginForm{
+    width: 280px;
+    position: absolute;
+    top: 50%;
+    left:70%;
+    transform: translate(-50%,-50%);
+    color: aliceblue;
+
+}
+.textbox{
+    width: 100%;
+    font-size: 20px;
+    padding: 8px ;
+    margin: 8px ;
+    border-bottom: 1px solid;
+}
+.textbox input{
+    border:none;
+    outline: none;
+    background:none;
+    color: whitesmoke;
+    font-size: 18px;
+    width: 80%;
+
+}
+
+.btn{
+    width:100%;
+    background: none;
+    border: 2px solid;
+    color:white;
+    padding:5px;
+    font-size: 18px;
+    
+}
+
+.signbtn{
+    width:100%;
+    background: none;
+    border: 2px solid;
+    color:white;
+    padding:5px;
+    font-size: 18px;
+    
+}
