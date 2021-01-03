@@ -1,5 +1,5 @@
 
-<?php include 'header.html' ?>
+<?php include '../view/header.html' ?>
 
 <?php 
     session_start();
@@ -16,7 +16,7 @@
 	
 	
 	<?php
-include('config.php');
+include('../model/config.php');
 if(isset($_POST['Insert'])) {
 
 	try {
@@ -161,7 +161,7 @@ if(isset($_POST['Insert'])) {
 	<a href="AdminProfile.php"> Back </a>
 	
     <div>
-    <?php include 'footer.html' ?>
+    <?php include '../view/footer.html' ?>
      </div>
 	
   

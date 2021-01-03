@@ -30,7 +30,7 @@
 			echo "Mail is empty";		
 		}
 		else {
-			echo "Mail is: " . $_REQUEST["employeepost"];
+			echo "Mail is: " . $_REQUEST["employeemail"];
 		}
 		
 		
