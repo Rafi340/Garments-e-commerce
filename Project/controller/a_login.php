@@ -123,6 +123,7 @@ if(isset($error_message))
 	<?php 
 	 $_SESSION['username']=$username;      //Session is created
 	 //echo  $_SESSION['username'];
+	 $_SESSION['password']=$password;
 	 ?>
 	 
 	

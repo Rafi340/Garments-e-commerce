@@ -39,7 +39,8 @@
 	
 	 
 	 <?php 
-	 echo  $_SESSION['username'];
+	 echo "username"." =  ". $_SESSION['username']."\n";
+	  echo  "password"." = ".$_SESSION['password'];
 	 ?>
 	 
 	 <br>
