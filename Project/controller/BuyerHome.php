@@ -30,7 +30,7 @@
 				</li>
 	
 				<li class="Addcart">
-					<a href="acart.php">Add to cart</a>
+					<a href="Cart.php">Add to cart</a>
 				</li>
 				<li class="Checkout">
 					<a href="checkout.php">Check Out</a>

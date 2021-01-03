@@ -67,6 +67,7 @@ if(isset($_POST['form_login']))
  <div style="display:inline-block;">
     <?php include '../view/header.html' ?>
   </div>
+  <h2>Buyer Login</h2>
 
 <?php
 if(isset($error_message))
