@@ -9,8 +9,15 @@
 		<title>Admin Profile page </title>
 	</head>
 	
+	<style>
+	
+		body{
+			background-color: yellow;
+		}
+	</style>
+	
 	<body>
-	 <h1>Profile page</h1>
+	<!-- <h1>Profile page</h1>-->
 	 
 	<div style="display:inline-block;">
    

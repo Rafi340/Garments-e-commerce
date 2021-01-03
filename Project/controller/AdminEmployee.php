@@ -14,6 +14,15 @@
 		<title>Admin Employee page </title>
 	</head>
 	
+	<style>
+	
+		body{
+			background-color: yellow;
+		}
+	</style>
+	
+	
+	
 	
 	<?php
 include('../model/config.php');
@@ -115,7 +124,7 @@ if(isset($_POST['Insert'])) {
 	
 	
 	<body>
-	 <h1>Employee page</h1>
+	<!-- <h1>Employee page</h1>-->
 	 
 	<div style="display:inline-block;">
     
@@ -151,7 +160,6 @@ if(isset($_POST['Insert'])) {
 			
 			Mail: <input type="text" id="employeemail" name="employeemail">
 			<p id="MerrorMsg"> </p>
-            <br>
 			<br><!--<p id="errorMsg"> </p>-->
 				
 			
@@ -159,6 +167,8 @@ if(isset($_POST['Insert'])) {
 		</form>
 	
 	<a href="AdminProfile.php"> Back </a>
+	
+	<!--<a href="view/Homepage.php"> Logout </a>-->
 	
     <div>
     <?php include '../view/footer.html' ?>

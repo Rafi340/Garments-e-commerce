@@ -59,7 +59,11 @@ if(isset($success_message)) {echo $success_message;}
 
 <br>
 
+
+
 <form action="" method="post">
+
+
 <table>
 	<tr>
 		<td>Name: </td>
