@@ -59,14 +59,29 @@ if(isset($_POST['form_login']))
 <br>
 
 <!DOCTYPE html>
+<?php 
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+	
+	$cookieValue= $_POST["username"];
+	setcookie('Buyer',$cookieValue,time()+6000);
+		
+}
+ ?>
 <html>
 <head>
 	<title>Buyer LoginForm</title>
 </head>
 <body>
+	<style type="text/css">
+		body{
+			background-image:url(../view/b.jpg); 
+		}
+	</style>
  <div style="display:inline-block;">
     <?php include '../view/header.html' ?>
   </div>
+  <h2>Buyer Login</h2>
 
 <?php
 if(isset($error_message))
