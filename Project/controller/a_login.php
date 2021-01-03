@@ -78,6 +78,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
 	<title>Log in Form</title>
 </head>
+
+<style>
+	
+		body{
+			background-color: yellow;
+		}
+	</style>
+
 <body>
  <div style="display:inline-block;">
     <?php include '../view/header.html' ?>
