@@ -62,6 +62,30 @@ if(isset($_POST['Insert'])) {
 	}
 	
 }
+
+/*else if($_POST['Delete']){
+	
+	try {
+	
+		$id='employeeid';
+		$statement = $db->prepare("DELETE * from employee WHERE employeeid = ? ");
+		//$statement->execute(array($_POST['employeename'],$_POST['employeesalary'],$_POST['employeepost'],$_POST['employeemail']));
+		$statement -> bind_param("i", $id);
+		$statement -> execute();
+		
+		$success_message1 = 'Data has been deleted successfully.';
+		
+	
+	}
+	
+	catch(Exception $e) {
+		$error_message1 = $e->getMessage();
+	}
+	
+	
+}*/
+
+
 ?>
 
 
@@ -160,7 +184,11 @@ if(isset($_POST['Insert'])) {
 			
 			Mail: <input type="text" id="employeemail" name="employeemail">
 			<p id="MerrorMsg"> </p>
-			<br><!--<p id="errorMsg"> </p>-->
+			 <!-- <br>-->
+			<!--<p id="errorMsg"> </p>-->
+				
+			<!--Id: <input type="text" id="employeeid" name="employeeid">-->
+			<!--<br>-->
 				
 			
 			<input type="submit" value="Insert" name="Insert">
