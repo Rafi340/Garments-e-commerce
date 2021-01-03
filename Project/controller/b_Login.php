@@ -73,6 +73,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	<title>Buyer LoginForm</title>
 </head>
 <body>
+	<style type="text/css">
+		body{
+			background-image:url(../view/b.jpg); 
+		}
+	</style>
  <div style="display:inline-block;">
     <?php include '../view/header.html' ?>
   </div>
@@ -115,8 +120,7 @@ if(isset($error_message))
 	
 	<?php
 	//var username;
-	 $_SESSION['username']=$username;
-	 $_SESSION['Email']=$Email;         
+	 $_SESSION['username']=$username;        
 	 echo  $_SESSION['username'];
 	 ?>
 	
