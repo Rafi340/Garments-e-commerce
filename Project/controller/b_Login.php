@@ -97,6 +97,7 @@ if(isset($error_message))
 		<td>Username: </td>
 		<td><input type="text" name="username" required></td>
 	</tr>
+	<br>
 	<tr>
 		<td>Password: </td>
 		<td><input type="password" name="password" required></td>
@@ -106,18 +107,15 @@ if(isset($error_message))
 		<td><input type="submit" value="Login" name="form_login" required></td>
 	</tr>
 	</table>
+	<br>
+
 	
-	
-	
-	
-	
-	<form action="FP.php" method="post">
-	<input type="submit" name="Fp" value="forgot password??" style="color:green; font-weigt:bold">
-	</form>
 	<form action="b_signin.php" method="post">
-	<input type="submit" name="b_signin" value="SignIn" style="color:green; font-weigt:bold">
+	<input type="submit" name="b_signin" value="">
 	</form>
-	
+	<a href="b_signin.php">
+		<button>Sign In</button>
+	</a>
 	<?php
 	//var username;
 	 $_SESSION['username']=$username;        

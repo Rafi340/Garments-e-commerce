@@ -132,11 +132,25 @@
                         <?php
                     }
                 ?>
-            </table>
+    <a href="BuyerHome.php">
+    <button>Back</button>
+    </a>
+    <a href="b_login.php">
+    <button>Log Out</button>
+    </a>
+        </table>
+           
         </div>
+
+
             <?php include '../view/footer.html' ?>
     </div>
-
+    <div>
+    </a>
+    <a href="b_login.php">log out</a>
+    </table>
+    </div>
+    
 
 </body>
 </html>

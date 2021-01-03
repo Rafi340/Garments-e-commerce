@@ -47,11 +47,8 @@
 				<li class="Checkout">
 					<a href="checkout.php">Check Out</a>
 				</li>
-				<li class="sdetails">
-					<a href="ShippingDetails.php">Shipping Details</a>
-				</li>
-				<li class="track">
-					<a href="trackorder.php">Track Oder</a>
+				<li class="Track Order and Shipping Details">
+					<a href="tks.php">Track Order and Shipping Details</a>
 				</li>
 				<li class="ProductReview">
 					<a href="ProductReview.php">ProductReview</a>
