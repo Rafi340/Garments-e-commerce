@@ -4,21 +4,55 @@
 	<meta charset="UTF-8">
 	<title></title>
 </head>
-<body  bgcolor="yellow">
+<body  bgcolor="#E8E8FF">
 	<h2><big>Welcome to our buyer rank procedure</big></h2>
 	<h3><i>We Rank Our Customers Following This:</i></h3>
-	<img width="1000px" height="600px" src="image/tex20.jpg" alt="" />
+	<img width="1000px" height="400px" src="../image/tex20.jpg" alt="" />
 
 	<form action="" method ="post">
-    <div class="absolute9"><br><b><i>When Purchase Week is-"3" &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Amount Spent is-"$54.75" &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Customer Rank Point is-"54.00"</i></b></div> 
-<div class="absolute10"><br><b><i>When Purchase Week is-"10"   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Amount Spent is-"$15.25"  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Customer Rank Point-"15.25"</i></b></div> 
-<div class="absolute11"><br><b><i>When Purchase Week is-"15"   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Amount Spent is-"$35.00"   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Customer Rank Point-"35.00"</i></b></div> 
-<div class="absolute10"><br><b><i>When Purchase Week is-"25"    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Amount Spent is-"$107.50"   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Customer Rank Point-"107.50"</i></b></div> 	
-<div class="absolute10"><br><b><i>When Purchase Week is-"34"    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Amount Spent is-"$20.00"  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Customer Rank Point-"20.00"</i></b></div>
-<div class="absolute10"><br><b><i>When Purchase Week is-"41"     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Amount Spent is-"$10.75"    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Customer Rank Point-"10.75"</i></b></div> </br></br></br>
-<div class="absolute10"><br><b>So, Total Week is-"52"      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Total point is-"$379.00"   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    Avarage Customer Rank Point is-"15.25"</b></div>  
-    </div>
-		  </form></br></br></br></br></br>
-		  <a href="UserView.php"><button style="background-color:red">Back</button><a>
+	<table border=1 cellspacing="0" width="800px" align="">
+		<tr>
+		<td>Purchase Week</td>
+		<td>Amount Spent</td>
+		<td>Rank Point</td>
+		<td>Weight</td>
+	   </tr>
+		<tr>
+			<td>3</td>
+			<td>$54.75</td>
+			<td>54.75</td>
+			<td>2.0</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>$57.75</td>
+			<td>51.75</td>
+			<td>4.0</td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td>$61.75</td>
+			<td>55.29</td>
+			<td>2.5</td>
+		</tr>
+		<tr>
+			<td>6</td>
+			<td>$54.75</td>
+			<td>54.75</td>
+			<td>2.0</td>
+		</tr>
+		<tr>
+			<td>7</td>
+			<td>$59.75</td>
+			<td>44.75</td>
+			<td>1.0</td>
+		</tr>
+	</table>
+	<br>
+	<br>
+	<br>
+	<br>
+	
+<button style="background-color:red"><a href="UserView.php">Back</a></button>
 </body>
 </html>
