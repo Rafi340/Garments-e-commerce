@@ -59,6 +59,15 @@ if(isset($_POST['form_login']))
 <br>
 
 <!DOCTYPE html>
+<?php 
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+	
+	$cookieValue= $_POST["username"];
+	setcookie('Buyer',$cookieValue,time()+6000);
+		
+}
+ ?>
 <html>
 <head>
 	<title>Buyer LoginForm</title>
@@ -106,7 +115,8 @@ if(isset($error_message))
 	
 	<?php
 	//var username;
-	 $_SESSION['username']=$username;        
+	 $_SESSION['username']=$username;
+	 $_SESSION['Email']=$Email;         
 	 echo  $_SESSION['username'];
 	 ?>
 	
