@@ -11,6 +11,18 @@
 </head>
 <body>
 	<h2>Home Page</h2>
+
+	<?php
+	if(isset($_COOKIE['Buyer'])){
+			
+			echo "Cookie set";
+			
+		}
+		else
+		{
+			echo "Cookie not set";
+		}
+	?>
 	<?php
 	echo "Welcome to ";
 	echo $_SESSION['username'];
