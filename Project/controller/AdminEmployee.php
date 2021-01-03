@@ -151,7 +151,6 @@ if(isset($_POST['Insert'])) {
 			
 			Mail: <input type="text" id="employeemail" name="employeemail">
 			<p id="MerrorMsg"> </p>
-            <br>
 			<br><!--<p id="errorMsg"> </p>-->
 				
 			
