@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-
+<link rel="stylesheet" href="../view/Actrans.css">
 </head>
 <body>
 
@@ -15,12 +15,12 @@ $result=mysqli_query($conn,$sql);
 $nd=mysqli_fetch_all($result,MYSQLI_ASSOC);
 mysqli_free_result($result);
 
-$sql1="SELECT sum(amount) as total FROM trans";
+/*$sql1="SELECT sum(amount) as total FROM trans";
 $result1=mysqli_query($conn,$sql1);
 $nd1=mysqli_fetch_all($result1,MYSQLI_ASSOC);
 mysqli_free_result($result1);
 mysqli_close($conn);
-//$result=$conn->query($sql);
+//$result=$conn->query($sql);*/
 
 ?>
 
@@ -41,17 +41,20 @@ mysqli_close($conn);
     
     <?php endforeach; ?>
 
-    <?php foreach($nd1 as $key1): ?> 
-    <?php echo $key1["total"] ?>
+    <!--php foreach($nd1 as $key1): ?> 
+    <!--php echo $key1["total"] ?>
      
 
 
-    <?php endforeach; ?>
+    <!--php endforeach;?>--> 
     
     
        
 
 </table>
+<a href="AcHomepage.php">
+<button>Back</button>
+</a>
 
 </div>
 
