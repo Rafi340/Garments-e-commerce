@@ -13,7 +13,7 @@ if(isset($_POST['AccSignin'])) {
 
 	try {
 	
-		/*if(empty($_POST['Name'])) {
+		/*(empty($_POST['Name'])) {
 			throw new Exception('insert name');
 		}
 		
@@ -125,12 +125,12 @@ if(isset($success_message)) {echo $success_message;}
 
 
 <!--<form action="" method="post">-->
-<form name="js" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST" onsubmit="return validate()">
+<form name="jsForm" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST" onsubmit="return validate()">
 
 <table>
 	<tr>
 		<td>Name: </td>
-		<td><input type="text" name="Name"></td>
+		<td><input type="text" name="Name" Required></td>
 	</tr>
 	<tr>
 		<td>username: </td>
@@ -142,7 +142,7 @@ if(isset($success_message)) {echo $success_message;}
 	</tr>
 	<tr>
 		<td>password: </td>
-		<td><input type="text" name="password"></td>
+		<td><input type="text" name="password" Required></td>
 	</tr>
 	<tr>
 		<td></td>

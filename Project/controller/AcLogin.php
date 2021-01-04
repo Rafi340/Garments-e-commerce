@@ -59,7 +59,7 @@ if(isset($_POST['AcLogin']))
 <?php
 $cookie_name = "r";
 $cookie_value = "rashik";
-setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/"); // 86400 = 1 day
+setcookie($cookie_name, $cookie_value, time() + (3600), "/");
 ?>
 <html>
 <body>
@@ -113,7 +113,7 @@ if(isset($error_message))
     </tr>
     <tr>
         <td></td>
-        <td><input type="submit" value="Login" name="AcLogin" required></td>
+        <td><input type="submit" value="Login" name="AcLogin" ></td>
     </tr>
     </table>
     
