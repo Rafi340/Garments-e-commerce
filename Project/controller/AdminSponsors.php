@@ -10,7 +10,7 @@
 
  
 
-    <h2>Sponsor1</h2>
+    <!--<h2>Sponsor1</h2>-->
 
  
 
