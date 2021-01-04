@@ -1,3 +1,5 @@
+<?php include '../view/header.html' ?>
+
 <?php 
     session_start();
  ?>
@@ -88,7 +90,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <body>
  <div style="display:inline-block;">
-    <?php include '../view/header.html' ?>
+  
   </div>
   <?php
 if(isset($error_message))
