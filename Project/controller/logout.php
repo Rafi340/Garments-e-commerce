@@ -1,13 +1,11 @@
-
 <?php
 
 session_start();
 
-session_unset();
-
-session_destroy();
-
-header("Location:Userlogin.php");
+if(session_destroy())
+{
+setcookie("userName", $cookie_value, time() - (86400 * 50), "/"); 
+header("Location: ../view/Userlogin.php");
+}
 
 ?>
-
