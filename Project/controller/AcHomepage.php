@@ -1,20 +1,17 @@
 <!DOCTYPE html>
 <head>
 <title> Home Page </title>
+
+<link rel="stylesheet" href="../view/AcHome.css">
 </head>
 <body>
 
 <?php
-	echo "Welcome to ";
-	echo $_SESSION['username'];
-	?>
 
-<?php
-
-include 'header2.php'
+include '../view/header2.php';
 ?>
 
-<a href="TransList.php">Transaction </a> <br>
+<a href="AcTransList.php">Transaction </a> <br>
 <a href="VerifyOnlineTrans.php">Verify O/T</a> <br>
 <a href="ReceivedMoney.php">Received Money</a> <br>
 <a href="Employees.php">Employees</a><br>
@@ -28,7 +25,7 @@ include 'header2.php'
 <br><br>
 
 <?php
-include 'Footer1.php'
+include '../view/Footer1.php'
 ?>
 
 </body>

@@ -1,33 +1,41 @@
 
 <?php
-include('../model/config.php');
+session_start();
+require('acjs.php');
+
+?>
+
+
+<?php
+
+include('../model/server.php');
 if(isset($_POST['AccSignin'])) {
 
 	try {
 	
-		if(empty($_POST['Name'])) {
-			throw new Exception('Name can not be empty');
+		/*if(empty($_POST['Name'])) {
+			throw new Exception('insert name');
 		}
 		
 		if(empty($_POST['username'])) {
-			throw new Exception('UserName can not be empty');
+			throw new Exception('insert UserName');
 		}
 		
 		
 		if(empty($_POST['Email'])) {
-			throw new Exception('Email can not be empty');
+			throw new Exception('insert mail');
 		}
 		if(empty($_POST['password'])) {
-			throw new Exception('password can not be empty');
-		}
+			throw new Exception('insert pass.');
+		}*/
 		
 		
-		//$result = mysql_query("insert into tbl_student (st_name,st_roll,st_age,st_email) values('$_POST[st_name]','$_POST[st_roll]','$_POST[st_age]','$_POST[st_email]') ");
+		
 		
 		$statement = $db->prepare("insert into acc_login (Name,username,Email,password) values(?,?,?,?)");
 		$statement->execute(array($_POST['Name'],$_POST['username'],$_POST['Email'],$_POST['password']));
 		
-		$success_message = 'Data has been inserted successfully.';
+		$success_message = 'Data inserted successfully.';
 		
 	
 	}
@@ -39,9 +47,64 @@ if(isset($_POST['AccSignin'])) {
 }
 
 ?>
+
+<script>
+			function validate() {
+				var x = document.getElementById('Name').value;
+				// console.log(x);
+				if(x == "") {
+					document.getElementById('errorMsg').innerHTML = "Name is empty";
+					document.getElementById('errorMsg').style.color = "red";
+						
+				}
+				
+				
+				
+				var y = document.getElementById('username').value;
+				// console.log(x);
+				if(y == "") {
+					document.getElementById('SerrorMsg').innerHTML = "username is empty";
+					document.getElementById('SerrorMsg').style.color = "red";
+						
+				}
+				
+				
+				
+				var z = document.getElementById('Email').value;
+				// console.log(x);
+				if(z == "") {
+					document.getElementById('PerrorMsg').innerHTML = "Email is empty";
+					document.getElementById('PerrorMsg').style.color = "red";
+						
+				}
+				
+				
+				
+				var a = document.getElementById('password').value;
+				// console.log(x);
+				if(a == "") {
+					document.getElementById('MerrorMsg').innerHTML = "password is empty";
+					document.getElementById('MerrorMsg').style.color = "red";
+						
+				}
+				
+				if(x=="" || y=="" ||z=="" ||a=="" ){
+					return false;
+				}
+				else{ return true; }
+				
+				
+				
+			}
+</script>
+
+
+
+
 <!doctype html>
 <html lang="en">
 <head>
+<link rel="stylesheet" href="../view/AcSign.css">
 	<div style="display:inline-block;">
     <?php include '../view/header3.php' ?>
   	</div>
@@ -61,8 +124,8 @@ if(isset($success_message)) {echo $success_message;}
 
 
 
-<form action="" method="post">
-
+<!--<form action="" method="post">-->
+<form name="js" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST" onsubmit="return validate()">
 
 <table>
 	<tr>
@@ -83,14 +146,16 @@ if(isset($success_message)) {echo $success_message;}
 	</tr>
 	<tr>
 		<td></td>
-		<td><input type="submit" value="insert" name="AccSignin"></td>
+		<td><input type="submit" value="insert" name="AccSignin"></td><br>
+		
 	</tr>
-</table>
+</table><br>
+<a href="AcLogin.php"> Go to login </a><br>
 </form>
 
 
 <br>
-<a href="b_Login.php">back to previous</a>
+
 	
 	<div>
     <?php include '../view/footer2.php' ?>
