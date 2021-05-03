@@ -1,5 +1,6 @@
 <?php 
     session_start();
+    $username;
  ?>
 
 <?php
@@ -9,12 +10,12 @@ if(isset($_POST['AcLogin']))
     try {
         
         if(empty($_POST['username'])) {
-            throw new Exception('Username can not be empty');
+            throw new Exception('Fill the empty field');
         }
         
         
         if(empty($_POST['password'])) {
-            throw new Exception('Password can not be empty');
+            throw new Exception('Fill the empty field');
         }
     
         
@@ -54,14 +55,39 @@ if(isset($_POST['AcLogin']))
 ?>
 <br>
 <!DOCTYPE html>
+
+<?php
+$cookie_name = "r";
+$cookie_value = "rashik";
+setcookie($cookie_name, $cookie_value, time() + (3600), "/");
+?>
+<html>
+<body>
+
+<?php
+if(!isset($_COOKIE[$cookie_name])) {
+     echo "Cookie named '" . $cookie_name . "' is not set!";
+} else {
+     echo "Cookie '" . $cookie_name . "' is set!<br>";
+     echo "Value is: " . $_COOKIE[$cookie_name];
+}
+?>
+
+
 <html>
 <head>
     <title>Accountant LoginForm</title>
+
 </head>
+<link rel="stylesheet" href="../view/AcStyle.css">
 <body>
+
+
+
  <div style="display:inline-block;">
     <?php include '../view/header1.php' ?>
   </div>
+  
 
  
 
@@ -87,7 +113,7 @@ if(isset($error_message))
     </tr>
     <tr>
         <td></td>
-        <td><input type="submit" value="Login" name="AcLogin" required></td>
+        <td><input type="submit" value="Login" name="AcLogin" ></td>
     </tr>
     </table>
     
@@ -95,17 +121,15 @@ if(isset($error_message))
     
     
     
-    <form action="AcHomepage.php" method="post">
-    <input type="submit" name="Fp" value="forgot password??" style="color:green; font-weigt:bold">
-    </form>
-    <form action="AccSignin.php" method="post">
-    <input type="submit" name="AccSignin" value="SignIn" style="color:green; font-weigt:bold">
-    </form>
+    <!--<input class="btn" input type="submit" name="submit" value="log In">-->
+    </form><br><br>
+    <a href="AccSignin.php"> Create an Acc. </a> <br>
     
     <?php
+    
     //var username;
-     $_SESSION['username']=$username;        
-     echo  $_SESSION['username'];
+    // $_SESSION['username']=$username; 
+    SESSION_destroy();       
      ?>
     
     
